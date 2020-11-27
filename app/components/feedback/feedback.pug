@@ -1,0 +1,37 @@
+mixin feedback()
+  +b.feedback&attributes(attributes)
+    +e.bg
+      img(src="assets/images/feedback-bg@2x.png" alt="feedback-bg")
+
+    .container
+      +e.H2.title Оформление
+        span #{" "} Заказа
+      +e.H4.subtitle Перед заполнением формы ознакомьтесь с нашей схемой работы!
+
+      +features
+
+      +form
+        +grid
+          +col({xl: 4, md: 6, sm: 12}).grid__col--ord-1
+            +select-block
+          +col({xl: 4, md: 6, sm: 12}).grid__col--ord-2
+            +inputbox
+              +input(type="text" placeholder="Ваш e-mail")
+          +col({xl: 4, md: 6, sm: 12}).grid__col--ord-3
+            +inputbox
+              +input(type="text" placeholder="Ваше имя")
+          +col({xl: 8, md: 12}).grid__col--ord-5
+            +inputbox.--column
+              +label
+                +e.SPAN.descr Sed ut perspiciatis, unde omnis iste natus
+                +e.SPAN.num#indicator 75 %
+              +input(type="range" id="range", min="0", max="100", value="75", step="any")
+          +col({xl: 4, md: 6, sm: 12}).grid__col--ord-4
+            label.inputbox.inputbox--label
+              +input(type="file")
+              span.inputbox__icon
+                img(src="assets/images/icons/doc-file@2x.png" alt="Icon")
+              span.inputbox__descr Прикрепить файл
+          +col({xl: 4, md: 6, sm: 8, xs: 12}).grid__col--ord-6
+            +button Отправить
+

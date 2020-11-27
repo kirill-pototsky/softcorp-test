@@ -1,0 +1,48 @@
+mixin features()
+  +b.features&attributes(attributes)
+    +e.item
+      +e.icon.--search
+        img(src="assets/images/icons/search@2x.png" alt="search")
+      +e.descr Lorem ipsum dolor
+        br
+        | sit amet
+
+    +e.splitter
+      - for (var i=0;i<5;i++)
+        span
+
+    +e.item
+      +e.icon.--percent
+        img(src="assets/images/icons/procent@2x.png" alt="percent")
+      +e.descr Сonsecteturadipiscing elit
+
+    +e.splitter
+      - for (var i=0;i<5;i++)
+        span
+
+    +e.item
+      +e.icon.--doc
+        img(src="assets/images/icons/doc@2x.png" alt="doc")
+      +e.descr Sed do eiusmod tempor
+
+    +e.splitter
+      - for (var i=0;i<5;i++)
+        span
+
+    +e.item
+      +e.icon.--mail
+        img(src="assets/images/icons/mail@2x.png" alt="mail")
+      +e.descr Esse cillum dolore
+        br
+        | eu fugiat
+
+    +e.splitter
+      - for (var i=0;i<5;i++)
+        span
+
+    +e.item
+      +e.icon.--pay
+        img(src="assets/images/icons/pay@2x.png" alt="pay")
+      +e.descr Excepteur sint occaecat
+        br
+        | cupidatat non proident

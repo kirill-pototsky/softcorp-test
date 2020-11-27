@@ -1,0 +1,23 @@
+mixin intro()
+  +b.SECTION.intro&attributes(attributes)
+    +e.bg
+      img(src="assets/images/intro-bg@2x.jpg" alt="intro-bg")
+
+    .container
+      +e.H1.title
+        span Lorem ipsum
+        | #{" "} dolor sit amet
+        br
+        | consectetur
+        span #{" "} adipiscing
+
+      +e.UL.list
+        li At vero eos et accusamus et iusto odio dignissimos ducimus!
+        li Totam rem aperiam eaque ipsa
+        li Sit voluptatem accusantium doloremque laudantium
+        li Sed ut perspiciatis, unde omnis iste natus error
+
+      +e.buttons
+        +button Заказать
+        +button.--light Подробнее
+

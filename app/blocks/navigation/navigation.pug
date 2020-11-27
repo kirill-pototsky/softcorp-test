@@ -1,0 +1,9 @@
+mixin navigation()
+  +b.NAV.navigation&attributes(attributes)
+    +e.burger
+    +e.UL.list
+      +e.LI.item
+          +e.A(href="#!").link.is-active Бизнес
+      each data in ["О нас", "цены", "Оформить заказ"]
+        +e.LI.item
+          +e.A(href="#!").link= data

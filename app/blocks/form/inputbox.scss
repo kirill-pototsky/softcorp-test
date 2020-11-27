@@ -1,0 +1,65 @@
+.inputbox {
+  display: block;
+  height: 48px;
+
+  $b: &;
+
+  &--column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    @include screen(sm, max) {
+      font-size: 16px;
+    }
+  }
+
+  &__num {
+    font-size: 22px;
+
+    @include screen(sm, max) {
+      font-size: 18px;
+      margin-left: 10px;
+      min-width: 46px;
+    }
+  }
+
+  &--label {
+    padding: 15px;
+    border: 2px solid #3e9cdc;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    input[type='file'] {
+      display: none;
+    }
+
+    #{$b}__icon {
+      margin-right: 18px;
+
+      img {
+        width: 18px;
+        height: 20px;
+      }
+    }
+
+    #{$b}__descr {
+      font-weight: 600;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  }
+}

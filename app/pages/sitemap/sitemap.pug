@@ -1,0 +1,14 @@
+extends ../../layouts/default
+
+block head
+  - var pageTitle = 'Frontend Template';
+
+mixin demo-link(path)
+  +link(href=`${path}.html`, target='_blank')
+    block
+    |#{' '} (#{path}.html)
+
+block content
+  +b.sitemap
+    .container
+      +demo-link('index') Index

@@ -1,0 +1,23 @@
+mixin footer()
+  +b.FOOTER.footer&attributes(attributes)
+    .container
+      +e.item
+        +e.copyright © 2018 «LOREMIPSUM.NET» Все права защищены.
+
+      +e.splitter
+
+      +e.item
+        +e.UL.list.--grey
+          each data in [{"icon": "qiwi", "name": "Qiwi wallet"},{"icon": "ym", "name": "Yandex Money"},{"icon": "wm", "name":"Web Money"}]
+            li
+              img(src=`assets/images/icons/${data.icon}@4x.png` alt=data.icon)
+              span= data.name
+
+      +e.splitter
+
+      +e.item
+        +e.UL.list
+          each data in [{"icon": "mail", "name": "info@ipsum228.com"},{"icon": "vk", "name": "Мы вконтакте"}]
+            li
+              img(src=`assets/images/icons/${data.icon}@4x.png` alt=data.icon)
+              span= data.name

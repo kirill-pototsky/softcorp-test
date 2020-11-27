@@ -1,0 +1,13 @@
+mixin slider(pagination, buttons)
+  +b.swiper-container&attributes(attributes)
+    .swiper-wrapper
+      block
+    if pagination
+      .swiper-pagination
+    if buttons
+      .swiper-button-prev
+      .swiper-button-next
+
+mixin slide()
+  .swiper-slide
+    block

@@ -1,0 +1,27 @@
+// @mixin gradient-main {
+//   background: linear-gradient(0deg, $color-main, $color-border);
+// }
+
+// ##########
+// Массив градиентов для UI-кита
+// ##########
+// $gradients: (
+//   '@mixin gradient-main': linear-gradient(0deg, $color-main, $color-border),
+// );
+
+// $gradient-main: linear-gradient(90deg, #950b32 0%, #e85649 100%);
+
+// Example for use
+// @include gradient-text($gradient-main);
+
+// @mixin gradient-text($gradient, $border: false) {
+//   background: $gradient;
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+
+//   @if $border {
+//     border: 3px solid transparent;
+//     border-image: $gradient;
+//     border-image-slice: 1;
+//   }
+// }

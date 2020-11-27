@@ -1,0 +1,14 @@
+.logo {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: $font-second;
+
+  span {
+    color: $color-brend;
+  }
+
+  @include screen(xs, max) {
+    font-size: 22px;
+  }
+}

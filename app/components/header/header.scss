@@ -1,0 +1,27 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding-top: 33px;
+  padding-bottom: 34px;
+  background: rgba(#10101d, 0.9);
+  color: #fff;
+  transition: transform 0.5s ease;
+
+  &.scrolled {
+    transform: translateY(-100%);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include screen(xs, max) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
